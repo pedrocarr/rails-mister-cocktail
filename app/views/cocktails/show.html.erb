@@ -5,6 +5,7 @@
   <li>
     <%= dose.description %> <%= dose.ingredient.name %> <%= link_to 'remove this dose', dose_path(dose), method: :delete %>
   </li>
+  <% end %>
 </ul>
 
-<%= link_to "Add Dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+<%= link_to "Add Dose", new_cocktail_dose_path(@cocktail) %>
